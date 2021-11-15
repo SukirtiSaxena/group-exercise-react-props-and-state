@@ -35,6 +35,10 @@ function App() {
 
       <h2>Chuck Info: </h2>
       <ChuckInfo />
+      
+      <button>
+        Kick Me
+      </button>
 
       <h2>Jokes: </h2>
 
