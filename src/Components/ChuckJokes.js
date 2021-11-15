@@ -1,4 +1,6 @@
-function ChuckJokes({ joke: { joke } }) {
+function ChuckJokes(props) {
+
+    const { joke } = props.joke
 
     return (
         <>

@@ -29,6 +29,10 @@ function App() {
 
   const filteredJokes = jokes.filter(joke => joke.id === 1)
 
+  const handleRoundHouseKicks = () => {
+    setRoundHouseKicks(roundHouseKicks + 1)
+  }
+
   return (
     <div className="App">
 
@@ -36,8 +40,8 @@ function App() {
       <ChuckNorrisCard chuckGreet={chuckGreeting} chuckImg={chuckImage} />
 
       <h2>Chuck Info: </h2>
-      <ChuckInfo whales={whalesSaved} kicks={roundHouseKicks} />
-
+      <ChuckInfo whales={whalesSaved} kicks={roundHouseKicks} handleRoundHouseKicks={handleRoundHouseKicks}/>
+      
       <h2>Jokes: </h2>
       {jokes.map((joke) => <ChuckJokes key={joke.id} joke={joke} />)}
 
