@@ -6,11 +6,11 @@ import ChuckInfo from './Components/ChuckInfo';
 
 function App() {
 
-  const [chuckGreeting, useChuckGreeting] = useState("I am Chuck Norris!!!")
-  const [chuckImage, useChuckImage] = useState("https://images-global.nhst.tech/image/R1dwYnJhOTc5RjNCTG5URi9BMUlIZGE5cTRtemFrUWFBSVNINUMvZ20xZz0=/nhst/binary/f1ffde963b9087457feb601be1842d16?image_version=1200")
-  const [whalesSaved, useWhalesSaved] = useState(700)
-  const [roundHouseKicks, useRoundHouseKicks] = useState(300000)
-  const [jokes, useJokes] = useState([{
+  const [chuckGreeting, setChuckGreeting] = useState("I am Chuck Norris!!!")
+  const [chuckImage, setChuckImage] = useState("https://images-global.nhst.tech/image/R1dwYnJhOTc5RjNCTG5URi9BMUlIZGE5cTRtemFrUWFBSVNINUMvZ20xZz0=/nhst/binary/f1ffde963b9087457feb601be1842d16?image_version=1200")
+  const [whalesSaved, setWhalesSaved] = useState(700)
+  const [roundHouseKicks, setRoundHouseKicks] = useState(300000)
+  const [jokes, setJokes] = useState([{
     "id": 1,
     "joke": "Chuck Norris doesn’t read books. He stares them down until he gets the information he wants.",
   },
@@ -36,17 +36,13 @@ function App() {
       <ChuckNorrisCard chuckGreet={chuckGreeting} chuckImg={chuckImage} />
 
       <h2>Chuck Info: </h2>
-      <ChuckInfo  whales={whalesSaved} kicks={roundHouseKicks} />
+      <ChuckInfo whales={whalesSaved} kicks={roundHouseKicks} />
 
       <h2>Jokes: </h2>
-      {jokes.map((joke) => {
-        return <ChuckJokes prop={joke} />
-      })}
+      {jokes.map((joke) => <ChuckJokes key={joke.id} joke={joke} />)}
 
       <h2>Filtered Jokes: </h2>
-      {filteredJokes.map((joke) => {
-        return <ChuckJokes prop={joke} />
-      })}
+      {filteredJokes.map((joke) => <ChuckJokes key={joke.id} joke={joke} />)}
 
     </div>
   );
