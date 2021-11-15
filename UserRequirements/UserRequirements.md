@@ -20,7 +20,7 @@ The requirements are as follow:
 
 ## Requirement 3 - Chuck Jokes
 
-- The page must display some jokes about Chuck. These jokes can be found in one of the useState declarations. Using what you know about JavaScript, `.map()` over jokes and return the `<ChuckJokes />` component. 
+- The page must display some jokes about Chuck. These jokes can be found in one of the useState declarations. Using what you know about JavaScript, `.map()` over jokes and return the `<ChuckJokes />` component underneath the heading "Jokes: ".
 
 - Pass the joke down to `<ChuckJokes />` using props 
 
