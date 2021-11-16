@@ -1,10 +1,10 @@
 # Getting Started 
 
-## Fork this repo to your GitHub
+### Fork this repo to your GitHub
 
-## Clone this repo to your local machine
+### Clone this repo to your local machine
 
-Then the project directory, you can run:
+Then in the project directory, you can run:
 
 ### `yarn install`
 
