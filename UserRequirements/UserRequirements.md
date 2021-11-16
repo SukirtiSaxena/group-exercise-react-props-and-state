@@ -14,6 +14,8 @@ The requirements are as follow:
 
 - In `ChuckCard.js` the `<img />` element must display a picture of Chuck (which is included in useState). To display Chucks picture pass it down to `ChuckCard.js` through props. 
 
+- Hint: Check out this React (beta) documentation if you get stuck: https://beta.reactjs.org/learn/passing-props-to-a-component
+
 ## Requirement 2 - Chuck Info
 
 - The page must display some information about Chuck. In `ChuckInfo.js` use props to display how many whales Chuck has saved and how many round house kicks he has done today.
@@ -24,9 +26,13 @@ The requirements are as follow:
 
 - Pass the joke down to `<ChuckJokes />` using props 
 
+- Hint: Check the documentation if you need a hint: https://beta.reactjs.org/learn/rendering-lists#rendering-data-from-arrays
+
 ## Requirement 4 - Roundhouse to the FACE!
 
 - In the "Kick me" button, add an onClick event that updates the roundHouseKicks by 1
+
+- Hint: Check the React documentation to find out how: https://beta.reactjs.org/learn/responding-to-events#adding-event-handlers
 
 ## Extension 
 
