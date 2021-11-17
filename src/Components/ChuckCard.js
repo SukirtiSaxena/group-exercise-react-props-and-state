@@ -1,4 +1,4 @@
-function ChuckCard() {
+function ChuckCard({ chuckGreeting, chuckImage }) {
 
     const chuckSoStylish = {
         width: "900px",
@@ -7,9 +7,9 @@ function ChuckCard() {
 
     return (
         <>
-            <h2>{ }</h2>
+            <h2>{chuckGreeting}</h2>
 
-            <img src={""}
+            <img src={chuckImage}
                 alt="Chuck Norris riding a killer whale"
                 style={chuckSoStylish} />
         </>

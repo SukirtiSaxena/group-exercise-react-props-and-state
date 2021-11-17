@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import ChuckNorrisCard from './Components/ChuckCard';
+import ChuckCard from './Components/ChuckCard';
 import ChuckJokes from './Components/ChuckJokes';
 import ChuckInfo from './Components/ChuckInfo';
 
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
 
       <h1>React props and state</h1>
-      <ChuckNorrisCard />
+      <ChuckCard chuckGreeting={chuckGreeting} chuckImage={chuckImage} />
 
       <h2>Chuck Info: </h2>
       <ChuckInfo />
