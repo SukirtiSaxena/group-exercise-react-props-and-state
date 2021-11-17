@@ -37,6 +37,10 @@ function App() {
       <ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks}/>
 
       <h2>Jokes: </h2>
+      {jokes.map((j)=>{
+        return <ChuckJokes key={j.id} joke={j.joke}/>
+      })}
+
 
     </div>
   );

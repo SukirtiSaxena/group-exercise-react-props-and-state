@@ -1,8 +1,8 @@
-function ChuckJokes() {
+function ChuckJokes({ joke }) {
 
     return (
         <>
-            <p></p>
+            <p> {joke} </p>
         </>
     )
 }
