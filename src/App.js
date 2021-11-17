@@ -34,7 +34,7 @@ function App() {
       <ChuckCard chuckGreeting={chuckGreeting} chuckImage={chuckImage} />
 
       <h2>Chuck Info: </h2>
-      <ChuckInfo />
+      <ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks}/>
 
       <h2>Jokes: </h2>
 
