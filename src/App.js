@@ -41,7 +41,10 @@ function App() {
         return <ChuckJokes key={j.id} joke={j.joke}/>
       })}
 
-
+      <h2>Filtered Jokes: </h2>
+      {jokes.filter(j=>j.id === 3).map((j) => {
+        return <ChuckJokes key={j.id} joke={j.joke} />
+      })}
     </div>
   );
 }
