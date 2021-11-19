@@ -34,15 +34,15 @@ function App() {
       <ChuckCard chuckGreeting={chuckGreeting} chuckImage={chuckImage} />
 
       <h2>Chuck Info: </h2>
-      <ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks}/>
+      <ChuckInfo whalesSaved={whalesSaved} roundHouseKicks={roundHouseKicks} />
 
       <h2>Jokes: </h2>
-      {jokes.map((j)=>{
-        return <ChuckJokes key={j.id} joke={j.joke}/>
+      {jokes.map((j) => {
+        return <ChuckJokes key={j.id} joke={j.joke} />
       })}
 
       <h2>Filtered Jokes: </h2>
-      {jokes.filter(j=>j.id === 3).map((j) => {
+      {jokes.filter(j => j.id === 3).map((j) => {
         return <ChuckJokes key={j.id} joke={j.joke} />
       })}
     </div>
